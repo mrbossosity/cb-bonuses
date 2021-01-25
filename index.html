@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="./init.js" defer></script>
+  <script src="./script.js" defer></script>
+  <title>College Bowl Bonuses</title>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+  <div class="supreme-container">
+    <div class="header">
+      <div class="top-title">College Bowl Bonuses</div>
+    </div>
+    <div class="header-impostor">
+      <div class="top-title-impostor">College Bowl Bonuses</div>
+    </div>
+    <div class="main-container">
+      <form target="frame" id="query">
+        <div class="search-panel">
+          <input type="text" name="search" id="search" placeholder="Search for a bonus answerline..." autofocus>
+          <button type="submit" id="search-submit">Search!</button>
+        </div>
+      </form>
+      <div class="results-container" style="display: none;">
+        <hr>
+        <div class="results-questions">
+          <div class="results-title">
+            <span>Results</span>
+          </div>
+          <div class="results-length" id="question-results-length"></div>
+          <div id="question-results"></div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 10vh"></div>
+    <div class="footer">
+      <span>
+        Check out the&nbsp;
+        <a target="_blank" href="https://github.com/mrbossosity/cbb-db">Github</a>
+        &nbsp;project page and question&nbsp;
+        <a target="_blank" href="https://github.com/mrbossosity/college-bowl-collections">JSONs</a> 
+        !&nbsp;All questions from Raynor Kuang's&nbsp;
+        <a target="_blank" href="https://www.quizdb.org/">QuizDB</a>.
+      </span>  
+    </div>
+  </div>
+  <iframe src="" name="frame" style="display: none;"></iframe>
+</body>
+</html>
